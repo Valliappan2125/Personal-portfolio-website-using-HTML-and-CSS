@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valliappan portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!--Navigation Section - Desktop -->
+
+      <nav class="navbar">
+        <h1><a href="index.html">VALLIAPPAN V</a></h1>
+        <div class="navbar-links">
+          <p class="navbar-link"><a href="#About">About</a></p>
+          <p class="navbar-link"><a href="#Education">Education</a></p>
+          <p class="navbar-link"><a href="#Skills">Skills</a></p>
+          <p class="navbar-link"><a href="#Projects">Projects</a></p>
+          <p class="navbar-link"><a href="#Contact">Contact</a></p>
+        </div>
+        <div
+          class="menu-bar-toggle"
+          onclick="showNavbar()"
+          id="menu-bar-toggle"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+
+      <!--Navigation Section - Mobile -->
+
+      <div class="side-navbar" id="side-navbar">
+        <p style="text-align: right" onclick="closeNavbar()">
+          <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+          <p class="side-navbar-link"><a href="#About">About</a></p>
+          <p class="side-navbar-link"><a href="#Education">Education</a></p>
+          <p class="side-navbar-link"><a href="#Skills">Skills</a></p>
+          <p class="side-navbar-link"><a href="#Projects">Projects</a></p>
+          <p class="side-navbar-link"><a href="#Contact">Contact</a></p>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+
+    <div class="container">
+      <img src="./assets/Photo.jpg" alt="pfp" class="pfp" />
+      <div class="desc">
+        <h1 style="color: white">
+          <img src="./assets/hello.svg" alt="hello" width="50" /> I am
+          Valliappan,
+        </h1>
+        <p style="color: orange; font-size: 1.2rem">
+          Aspiring MERN Stack Developer.
+        </p>
+        <p style="color: blueviolet">
+          Passionate and eager to contribute and learn.
+        </p>
+      </div>
+    </div>
+
+
+
+    <h1 id="About" style="color: white; text-align: center; margin-top: 3rem; font-size: 3rem; text-decoration: underline; margin-bottom: 2rem;">ABOUT ME</h1>
+    <p class="description">
+      Passionate fresher with proficiency in HTML, CSS, JavaScript, and React
+      aiming to advance in the field of web development. Dedicated to providing
+      fellow developers with cutting-edge tools for creating modern web
+      applications. Seeking opportunities to grow and contribute to innovative
+      projects.
+    </p>
+
+
+
+    <!-- Education Section -->
+
+
+    <section id="Education">
+      <h1 id="Education" style="color: white; text-align: center; margin-top: 3rem; font-size: 3rem; text-decoration: underline;">EDUCATION</h1>
+      <div class="edu">
+        <h1>Builders Engineering College</h1>
+        <h2 style="color: crimson">2021 - 2025</h2>
+        <h3>B.E. CSE</h3>
+      </div>
+
+      <div class="edu">
+        <h1>Chinnasamy Ammal Municipal Boys Higher Secondary School</h1>
+        <h2 style="color: crimson;">2020 - 2021</h2>
+        <h3>HSC</h3>
+      </div>
+    </section>
+
+
+    <!-- Skills Section -->
+
+    <div id="Skills">
+      <h1 id="Education" style="color: white; text-align: center; margin-top: 3rem; font-size: 3rem; text-decoration: underline;">SKILLS</h1><br>
+        <div>
+          <h1 style="color: white; padding: 1rem; text-align: center;">Web Development :</h1>
+          <div class="web" style="padding-left: 1rem;">
+            <div class="webskill">
+              <img src="./assets/html.svg" alt="html" width="100">
+              <h3>HTML</h3>
+            </div>
+            <div class="webskill">
+              <img src="./assets/css.svg" alt="css" width="100">
+              <h3>CSS</h3>
+            </div>
+            <div class="webskill">
+              <img src="./assets/js.svg" alt="js" width="100">
+              <h3>JAVASCRIPT</h3>
+            </div>
+          </div>
+          <br>
+
+
+          <div style="padding-left: 1rem;">
+            <h1 style="color: white; padding: 1rem; text-align: center;">Frameworks and Libraries :</h1>
+            <div class="framework">
+              <div>
+                <img src="./assets/tailwind.svg" alt="tailwind" width="100">
+                <h3>TAILWIND CSS</h3>
+              </div>
+              <div>
+                <img src="./assets/react.svg" alt="react" width="100">
+                <h3>REACT</h3>
+              </div>
+              <div>
+                <img src="./assets/node.svg" alt="node" width="100">
+                <h3>NODE</h3>
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <div style="padding-left: 1rem;">
+            <h1 style="color: white; padding: 1rem; text-align: center;">Version Control :</h1>
+            <div class="vercon">
+              <div>
+                <img src="./assets/git.svg" alt="git" width="100">
+                <h3>GIT</h3>
+              </div>
+              <div>
+                <img src="./assets/github.svg" alt="github" width="100">
+                <h3>GITHUB</h3>
+              </div>
+            </div>
+          </div>
+          <br>
+
+
+          <div style="padding-left: 1rem;">
+            <h1 style="color: white; padding: 1rem; text-align: center;">Database Management :</h1>
+            <div class="dbms">
+              <div>
+                <img src="./assets/mysql.svg" alt="mysql" width="100">
+                <h3>MYSQL</h3>
+              </div>
+              <div>
+                <img src="./assets/mongodb.svg" alt="mongodb" width="100">
+                <h3>MONGODB</h3>
+              </div>
+            </div>
+          </div>
+          <br>
+
+
+          <div style="padding-left: 1rem;">
+            <h1 style="color: white; padding: 1rem; text-align: center;">Programming Languages :</h1>
+            <div class="prolang">
+              <div>
+                <img src="./assets/c.svg" alt="c" width="100">
+                <h3>C</h3>
+              </div>
+              <div>
+                <img src="./assets/python.svg" alt="python" width="100">
+                <h3>PYTHON</h3>
+              </div>
+              <div>
+                <img src="./assets/java.svg" alt="java" width="100">
+                <h3>JAVA</h3>
+              </div>
+            </div>
+          </div>
+          <br>
+        </div>
+    </div>
+
+
+
+    <!-- Projects Section -->
+
+
+    <div id="Projects">
+      <div>
+        <h1 id="Education" style="color: white; text-align: center; margin-top: 3rem; font-size: 3rem; text-decoration: underline;">PROJECTS</h1><br>
+        <div class="project-card">
+          <h2 style="color: sandybrown;">Language Translator</h2>
+          <p>Developed a Language Translator using HTML, CSS and
+            JavaScript and
+            used Mymemory API for translating the text from one
+            language to another.
+            </p>
+            <div class="links">
+              <a href="https://github.com/Valliappan2125/Language-Translator-Using-HTML-CSS-and-JS" target="_blank"><img src="./assets/github.svg" alt="github" width="18"> Github</a>
+              <a href="https://valliappan2125.github.io/Language-Translator-Using-HTML-CSS-and-JS/" target="_blank">Live Demo</a>
+            </div>
+            <img src="./assets/p1.png" alt="project-1" class="p1">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Contact section -->
+
+
+    <div id="Contact">
+      <h1 id="Education" style="color: white; text-align: center; margin-top: 3rem; font-size: 2rem; text-decoration: underline;">CONNECT WITH ME</h1><br>
+      <div class="social-links">
+        <a href="https://github.com/Valliappan2125" target="_blank"><img src="./assets/github.svg" alt="github" width="18"> Github</a>
+        <a href="https://www.linkedin.com/in/valliappan2125/" target="_blank"><img src="./assets/linkedin.svg" alt="linkedin" width="18"> Linkedin</a>
+      </div>
+      <div>
+        <h3 style="color: white; text-align: center; margin-top: 2rem; font-size: 2rem; text-decoration: underline;">GET IN TOUCH</h3>
+        <div class="email-id">
+          <h3 style="color: white; text-align: center; margin-top: 1rem; letter-spacing: 2px;" id="email"><label for="email" style="color: sandybrown; font-size: 1.2rem;">Email: </label> valliappan1813@gmail.com</h3>
+        </div>
+        <div>
+          <h3 style="color: white; text-align: center; margin-top: 1rem; letter-spacing: 2px;" id="mobno"><label for="mobno" style="color: sandybrown; font-size: 1.2rem;">Mobile-No: </label> +91-9384909402</h3>
+        </div>
+      </div>
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-container">
+        <input type="hidden" name="access_key" value="c283e634-94fd-4a1b-a7e3-132facf9837b">
+        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required autocomplete="off">
+        <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required autocomplete="off">
+        <textarea name="message" placeholder="Your Message" class="contact-inputs" required autocomplete="off"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

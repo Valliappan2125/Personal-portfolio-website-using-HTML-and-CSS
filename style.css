@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik",sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #1e1e1e;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem;
+}
+
+.navbar h1 a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 1.7rem;
+}
+
+.navbar-links{
+    display: flex;
+    column-gap: 30px;
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-links a:hover{
+    color: greenyellow;
+}
+
+.menu-bar-toggle{
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.menu-bar-toggle:hover{
+    color: greenyellow;
+}
+
+.side-navbar{
+    background-color: black;
+    color: white;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -50%;
+    padding: 20px;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.side-navbar-links a:hover{
+    color: greenyellow;
+}
+
+.side-navbar p i{
+    font-size: 1.5rem;
+}
+
+.side-navbar p i:hover{
+    color: greenyellow;
+}
+
+@media screen and (max-width: 700px){
+    .menu-bar-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+}
+
+
+
+
+/* About section */
+
+.container .pfp{
+    width: 300px;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    letter-spacing: 1px;
+}
+
+
+.description{
+    background-color: rgb(117, 108, 176);
+    color: white;
+    padding: 1rem;
+    width: 80vw;
+    margin: 1rem auto;
+    text-align: justify;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+
+
+/* Education section */
+
+
+.edu{
+    background-color: rgb(190, 180, 180);
+    padding: 1rem;
+    margin: 1.5rem auto;
+    width: 80vw;
+    border-radius: 20px;
+    line-height: 30px;
+}
+
+
+/* Skills section */
+
+
+.web, .framework, .vercon, .dbms, .prolang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+}
+
+
+/* Projects Section */
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    row-gap: 1rem;
+    color: white;
+    border: 2px solid lightslategray;
+    margin: 1rem;
+    border-radius: 20px;
+}
+
+.links a, .social-links a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.links a:hover, .social-links a:hover{
+    opacity: 0.8;
+}
+
+.p1{
+    width: 60vw;
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+
+
+/* Contact Section */
+
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+    font-size: 1.1rem;
+}
+
+.contact-container textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus{
+    border: 2px solid #ff994f;
+}
+
+.contact-container::placeholder{
+    color: #a9a9a9;
+}
+
+.contact-container button{
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#ff994f,#fa6d86);
+    cursor: pointer;
+}
